@@ -1,0 +1,19 @@
+1. queue
+- 한쪽 끝에서 push, 반대쪽 끝에서 원소를 pop
+- FIFO (First In First Out)
+
+2. 성질
+- 원소의 추가, 제거가 O(1)
+- 제거되는 곳을 head, 추가되는 곳을 tail이라고 이름 붙여서 사용
+- 제일 앞, 뒤의 원소 확인이 O(1)
+- 나머지 원소들의 확인/변경이 원칙적으로 불가능
+	- 하지만 배열을 통하여 구현하면 확인이 가능하게 변경할 수 있음 
+
+3. STL queue
+- 보통 queue는 BFS나 Flood Fill을 할 때 사용
+- q.push : queue에 넣음
+- q.size : queue의 사이즈 
+- q.empty : queue가 비어있는지를 확인
+- q.front : queue의 앞의 원소
+- q.back : queue의 뒤의 원소
+- q.pop : 앞쪽의 원소 지우기
